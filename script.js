@@ -53,38 +53,23 @@ const teams = [
 // console.log((teams[0].nome)); // stampare solo il primo nome 
 
 
-console.log((teams[0].nome));
-console.log((teams[0].ruolo));
+//console.log((teams[0].nome));
+// console.log((teams[0].ruolo));
 // console.log('il secondo team è ' + (teams[1].nome) + ' ' + (teams[1].ruolo)); //stampo Angela Caroll Chief Editor
 
 
 // ciclare per 6 card
-
-
-cardTeams();
-console.log('card fuori funzione ' + cardComplete);
-/*const teamCardDiv = document.getElementsByClassName('team-card');
-const card = document.createElement('div');
-card.className = 'card-text';
-teamCardDiv.classList.add(card);  
-*/
-
-
-
-
-cardComplete = [];
-function cardTeams() {
-    for (let i = 0; i < teams.length; i++) {
+cardComplete = []; // card complete è una card di nome + ruolo
+// mi permette di avere 6 card complete diverse tra loro
+   for (let i = 0; i < teams.length; i++) {
         const team = teams[i];
         cardComplete = team.nome + ', ' + team.ruolo;
+        
         // console.log('Il nome completo della card è ' + cardComplete); 
         if (!cardComplete.includes(team)){
                 cardComplete.includes(team);
-                console.log('card interno funzione ' + cardComplete);      
         } 
-    } return cardComplete;
-}
-
-
-
-
+        console.log([i] + 'card interno funzione ' + cardComplete); 
+    }
+    document.getElementById( "h3" ).innerHTML = ((teams[0].nome));
+    document.getElementById( "demo" ).innerHTML = ((teams[0].ruolo));
