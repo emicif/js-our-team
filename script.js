@@ -68,8 +68,36 @@ cardComplete = []; // card complete è una card di nome + ruolo
         // console.log('Il nome completo della card è ' + cardComplete); 
         if (!cardComplete.includes(team)){
                 cardComplete.includes(team);
+                
         } 
+
+         //titolo
+        const sottoTitolo = document.getElementsByClassName("h3")[i];
+        console.log(sottoTitolo);
+        sottoTitolo.innerHTML = ((teams[i].nome));
+
+         // paragrafo
+        const paragrafo = document.getElementsByClassName("paragrafo")[i];
+        console.log(paragrafo);
+        paragrafo.innerHTML = ((teams[i].ruolo));
+       
+
         console.log([i] + 'card interno funzione ' + cardComplete); 
     }
-    document.getElementById( "h3" ).innerHTML = ((teams[0].nome));
-    document.getElementById( "demo" ).innerHTML = ((teams[0].ruolo));
+
+
+    // const h3 = document.getElementById( "h3" )
+    // h3.innerHTML = ((teams[0].nome));
+
+
+    /*
+         // paragrafo
+        const paragrafo = document.getElementsByClassName("paragrafo")[i];
+        console.log(paragrafo);
+        paragrafo.innerHTML = ((teams[i].ruolo));
+
+
+        const sottoTitolo = document.getElementsByClassName("h3")[i];
+        console.log(sottoTitolo);
+        sottoTitolo.innerHTML = ((teams[i].nome));
+*/
