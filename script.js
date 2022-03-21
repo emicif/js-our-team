@@ -86,9 +86,6 @@ cardComplete = []; // card complete è una card di nome + ruolo
     }
 
 
-    // const h3 = document.getElementById( "h3" )
-    // h3.innerHTML = ((teams[0].nome));
-
 
     /*
          // paragrafo
