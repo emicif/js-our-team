@@ -55,16 +55,36 @@ const teams = [
 
 console.log((teams[0].nome));
 console.log((teams[0].ruolo));
-console.log('il secondo team è ' + (teams[1].nome) + ' ' + (teams[1].ruolo)); //stampo Angela Caroll Chief Editor
+// console.log('il secondo team è ' + (teams[1].nome) + ' ' + (teams[1].ruolo)); //stampo Angela Caroll Chief Editor
 
-const card = document.getElementsByClassName('card-text');
-card.innerHTML = ' ';
 
 // ciclare per 6 card
+
+
+cardTeams();
+console.log('card fuori funzione ' + cardComplete);
+/*const teamCardDiv = document.getElementsByClassName('team-card');
+const card = document.createElement('div');
+card.className = 'card-text';
+teamCardDiv.classList.add(card);  
+*/
+
+
+
+
 cardComplete = [];
-for (let i = 0; i < teams.length; i++) {
-    const team = teams[i];
-    cardComplete = team.nome + ' ' + team.ruolo;
-    console.log('team nome è ' + cardComplete);
-    
+function cardTeams() {
+    for (let i = 0; i < teams.length; i++) {
+        const team = teams[i];
+        cardComplete = team.nome + ', ' + team.ruolo;
+        // console.log('Il nome completo della card è ' + cardComplete); 
+        if (!cardComplete.includes(team)){
+                cardComplete.includes(team);
+                console.log('card interno funzione ' + cardComplete);      
+        } 
+    } return cardComplete;
 }
+
+
+
+
