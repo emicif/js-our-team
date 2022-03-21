@@ -21,17 +21,17 @@ const team = [
         ruolo: 'Founder & Ceo'
     },
     {
-        nome: 'Wlater Gordon',
+        nome: 'Walter Gordon',
         ruolo: 'Chief Editor'
     }
 ];
-// console.log(team.nome); //se fosse solo object
+// console.log(team.nome); // se fosse solo object
 
 // console.log([0]) // mi stampa 0
 
 // console.log(team[0]); // stampa il primo gruppo di graffe
 
-console.log((team.nome)[0] + (team.nome)); // stampare solo il primo nome
+console.log((team[0].nome)); // stampare solo il primo nome
 
 
 
